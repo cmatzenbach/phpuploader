@@ -1,4 +1,4 @@
-File upload and message submission tool.  Currently deployed on http://caribgp.com/upload.php
+File upload/message submission tool; allows user to enter name and contact info, upload a file and send message to web-owner/company.  Currently deployed on http://caribgp.com/upload.php
 
 Fields displayed to user:<br />
 -Name<br />
