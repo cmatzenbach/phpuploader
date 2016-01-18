@@ -118,7 +118,7 @@ $dir = $_GET['dir'];
     if (isset($_POST['submit'])) {
      
 	 
-	 	// Email Variables Needed
+	 	// UPDATE - Email Variables Needed
 		$name = $_POST['name'];
 		$phone = $_POST['phone'];
 		$email_address = $_POST['email'];
@@ -202,24 +202,6 @@ $dir = $_GET['dir'];
     			echo "<div id=\"messages\" class=\"bad\">Only these file types are allowed for upload: " . implode(', ',$allowed_file_types) . "</div>";
     			unlink($_FILES["file"]["tmp_name"]);		
     		}
-
-	/*if(empty($_POST['name'])  		||
-   		empty($_POST['phone']) 		||
-   		empty($_POST['email']) 		||
-   		!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-   		{
-			echo "No arguments Provided!";
-			return false;
-   		}	*/		
-	// create email body and send it	
-	/*$to = 'cmatzenbach@gmail.com'; // PUT YOUR EMAIL ADDRESS HERE
-	$email_subject = "CaribGP Online Upload Form:  $name"; // EDIT THE EMAIL SUBJECT LINE HERE
-	$email_body = "You have received a file upload from your website's contact form.\n\n"."Here are the details:\n\nName: $name\n\nPhone: $phone\n\nEmail: $email_address\n\nMessage:\n$message";
-	$headers = "From: noreply@your-domain.com\n";
-	$headers .= "Reply-To: $email_address";	
-	mail($to,$email_subject,$email_body,$headers);
-	
-	return true;*/
 	
 	}
 
